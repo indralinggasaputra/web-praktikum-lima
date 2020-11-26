@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Chat - Indra Lingga Saputra</title>
+    <style>
+        .kotak{
+            border: 1px solid black;
+            width: 500px;
+            height: 500px;
+        }
+        .pojokkanan{
+            position: relative;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+    <script>
+        function kirimpesan(){
+            let isipesan = document.getElementById("isipesan").value;
+            document.getElementById("kotak").innerHTML += isipesan + "<br />";
+        }
+    </script>
+</head>
+<body>
+    <div class="pojokkanan">
+        <div class="kotak" id ="kotak">
+        </div>
+        <input type="text" id="isipesan">
+        <input type="submit" value="kirim" onclick="kirimpesan()">
+    </div>
+</body>
+</html>
